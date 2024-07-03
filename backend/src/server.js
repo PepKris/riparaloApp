@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
@@ -8,7 +10,6 @@ const serviceRoutes = require('./routes/service');
 const customerRoutes = require('./routes/customer');
 const ticketRoutes = require('./routes/ticket');
 
-require('dotenv').config({path: path.resolve(__dirname,'../etc/secrets/.env')});
 // express app
 const app = express();
 app.use(
