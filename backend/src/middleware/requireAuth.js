@@ -17,12 +17,12 @@ function readKeyFile(primaryPath, secondaryPath) {
 
 const privateKey = readKeyFile(
   path.join(__dirname, '../keys/rsa.private'),
-  path.join(__dirname, '../../etc/secrets/rsa.private')
+  path.join(__dirname, '../../../etc/secrets/rsa.private')
 );
 
 const publicKey = readKeyFile(
   path.join(__dirname, '../keys/rsa.public'),
-  path.join(__dirname, '../../etc/secrets/rsa.public')
+  path.join(__dirname, '../../../etc/secrets/rsa.public')
 );
 
 // Funzione per generare un token JWT
